@@ -57,7 +57,7 @@
             <button type="submit" class="btn btn-primary block full-width m-b">Login</button>
             <input type="hidden" name="key" value="login">
         </form>
-        <p class="m-t"> <small>Nite Streaming App Admin Panel base on Bootstrap 3 &copy; 2016.4</small> </p>
+        <p class="m-t"> <small>Nite Streaming App Admin Panel base on Bootstrap 3 &copy; 2017.9</small> </p>
     </div>
 </div>
 

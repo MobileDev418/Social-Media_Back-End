@@ -3,6 +3,6 @@
 
     </div>
     <div>
-        <strong>Copyright</strong> Nite Streaming App Admin &copy; 2016.4
+        <strong>Copyright</strong> Nite Streaming App Admin &copy; 2017.9
     </div>
 </div>
