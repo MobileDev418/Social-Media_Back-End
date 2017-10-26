@@ -26,7 +26,37 @@
         <br/>
         <br/>
         <p>Login in. To see it in action.</p>
-        
+        <form class="m-t" role="form" action="action.php" method="post">
+            <div class="form-group">
+                <p style="color: red;">
+                    <?php if(isset($_REQUEST['err'])){ ?>
+                        <span class="label label-sm label-danger">Alert: </span>
+                        <?php
+                        if($_REQUEST['err'] == 'error1'){
+                            echo "Invalid username/password combination";
+                        }elseif($_REQUEST['err'] == 'error2'){
+                            echo "Please register.";
+                        }elseif($_REQUEST['err'] == 'error3'){
+                            echo "Invalid input value.";
+                        }elseif($_REQUEST['err'] == 'error4'){
+                            echo "User already exist.";
+                        }elseif($_REQUEST['err'] == 'error5'){
+                            echo "Due to complaints that we received, your profile is currently under review.
+                                    We're sorry for any inconvenience.";
+                        }
+                    }
+                    ?>
+                </p>
+            </div>
+            <div class="form-group">
+                <input type="username" name="username" class="form-control" placeholder="Username" required="">
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="Password" required="">
+            </div>
+            <button type="submit" class="btn btn-primary block full-width m-b">Login</button>
+            <input type="hidden" name="key" value="login">
+        </form>
         <p class="m-t"> <small>Nite Streaming App Admin Panel base on Bootstrap 3 &copy; 2017.9</small> </p>
     </div>
 </div>
